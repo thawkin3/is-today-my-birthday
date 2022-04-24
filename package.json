@@ -1,0 +1,35 @@
+{
+  "name": "is-today-my-birthday",
+  "version": "1.0.0",
+  "description": "The best, easiest, and fastest way to determine if today is your birthday",
+  "main": "index.js",
+  "scripts": {
+    "ci:start-and-test": "concurrently -k -s=first \"yarn start\" \"yarn ci:test\"",
+    "ci:test": "wait-on http://localhost:3000 && yarn test",
+    "format": "prettier --write .",
+    "format-watch": "onchange . -- prettier --write {{changed}}",
+    "start": "node index.js",
+    "test": "inso run test \"Is Today My Birthday Test Suite\""
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "backend",
+    "json",
+    "birthday",
+    "date"
+  ],
+  "author": "Tyler Hawkins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "insomnia-inso": "^2.4.1",
+    "onchange": "^7.1.0",
+    "prettier": "^2.4.1",
+    "wait-on": "^6.0.0"
+  }
+}
