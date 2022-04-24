@@ -1,0 +1,21 @@
+_id: req_fc5054b56a9f42d18af687b391f866e9
+type: Request
+parentId: wrk_440fab3807f34a169c434aa2039f1f98
+modified: 1650771111693
+created: 1650771012966
+url: http://localhost:3000/istodaymybirthday/04-21-1990
+name: Today Is Not My Birthday
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1650771012966
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

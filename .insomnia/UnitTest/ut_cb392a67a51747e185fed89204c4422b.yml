@@ -1,0 +1,15 @@
+_id: ut_cb392a67a51747e185fed89204c4422b
+type: UnitTest
+parentId: uts_21fc75fd23734071b3fa33e0021de354
+modified: 1650771421522
+created: 1650771411474
+requestId: req_fc5054b56a9f42d18af687b391f866e9
+name: Returns false when today is not my birthday
+code: |-
+  const response = await insomnia.send();
+  const body = JSON.parse(response.data);
+
+  expect(body).to.be.an('object');
+
+  const isTodayMyBirthday = body.data;
+  expect(isTodayMyBirthday).to.equal(false);
