@@ -1,13 +1,23 @@
+const format = require('date-fns/format');
 const express = require('express');
+
 const router = express.Router();
 
 router.get('/', function (req, res) {
-  res.json({ data: 'No date provided' });
-});
+  if (!req.query.birthday) {
+    return res.json({ data: 'Please provide your birthdate' });
+  }
 
-router.get('/:date', function (req, res) {
-  const isTodayMyBirthday = req.params.date === '04-20-1990';
-  res.json({ data: isTodayMyBirthday });
+  const todaysDate = req.query.today || new Date();
+  const birthDate = new Date(req.query.birthday);
+
+  const todaysMonthAndDay = format(todaysDate, 'MM-DD');
+  const birthdayMonthAndDay = format(birthDate, 'MM-DD');
+
+  const isTodayMyBirthday = todaysMonthAndDay === birthdayMonthAndDay;
+  console.log(todaysMonthAndDay, birthdayMonthAndDay, isTodayMyBirthday);
+
+  return res.json({ data: isTodayMyBirthday });
 });
 
 module.exports = router;

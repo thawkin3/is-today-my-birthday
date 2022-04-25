@@ -8,7 +8,9 @@ const port = process.env.PORT || 3000;
 app.use('/istodaymybirthday', isTodayMyBirthdayRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Is Today My Birthday!');
+  res.send(
+    'Welcome to Is Today My Birthday, the best, easiest, and fastest way to determine if today is your birthday.'
+  );
 });
 
 app.listen(port, () => {
