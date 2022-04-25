@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-size: 100%;
+  background: #111;
+  color: #44bba4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+main {
+  border: 0.125rem solid #44bba4;
+  border-radius: 0.25rem;
+  background: #111;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  color: #44bba4;
+}
+
+p {
+  margin: 0 0 3rem 0;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input[type='date'] {
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  border: 0.0625rem solid #071a32;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #071a32;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type='date']:focus,
+input[type='date']:hover {
+  outline: none;
+  border: 0.0625rem solid #071a32;
+  border-bottom: 0.25rem solid #44bba4;
+  padding: 0.5rem 0.5rem 0.3125rem 0.5rem;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-radius: 0.5rem;
+  border: none;
+  background: #44bba4;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  max-width: 18rem;
+  word-break: break-word;
+  word-wrap: break-word;
+  transition: all 0.5s;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+}
+
+button:focus::before,
+button:hover::before {
+  box-shadow: #44bba4 0 0 0 0.0625rem;
+  content: '';
+  height: calc(100% + 0.25rem);
+  left: 0;
+  margin-left: -0.25rem;
+  margin-top: -0.25rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: calc(100% + 0.25rem);
+  border-radius: inherit;
+  padding: 0.125rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  font-size: 10rem;
+  margin: -1rem 0 1rem 0;
+  text-transform: uppercase;
+  width: 100%;
+}

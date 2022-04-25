@@ -8,7 +8,7 @@ router.get('/', function (req, res) {
     return res.json({ data: 'Please provide your birthdate' });
   }
 
-  const todaysDate = req.query.today || new Date();
+  const todaysDate = new Date(req.query.today) || new Date();
   const birthDate = new Date(req.query.birthday);
 
   const todaysMonthAndDay = format(todaysDate, 'MM-DD');

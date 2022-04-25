@@ -1,16 +1,16 @@
 const express = require('express');
+const path = require('path');
 
 const isTodayMyBirthdayRoutes = require('./routes/istodaymybirthday.js');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/istodaymybirthday', isTodayMyBirthdayRoutes);
 
 app.get('/', (req, res) => {
-  res.send(
-    'Welcome to Is Today My Birthday, the best, easiest, and fastest way to determine if today is your birthday.'
-  );
+  res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 app.listen(port, () => {
