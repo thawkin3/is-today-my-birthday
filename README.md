@@ -57,6 +57,7 @@ This is a simple REST API built with Node and Express that tells you whether or 
 ### Other Libraries Used
 
 - Express.js: https://expressjs.com/
+- date-fns: https://date-fns.org/
 - Prettier: https://prettier.io/
 - on-change: https://www.npmjs.com/package/on-change
 - wait-on: https://www.npmjs.com/package/wait-on
