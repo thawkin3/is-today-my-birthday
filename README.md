@@ -4,6 +4,8 @@ The best, easiest, and fastest way to determine if today is your birthday.
 
 This is a simple REST API built with Node and Express that tells you whether or not today is your birthday. Tests were written using Insomnia and the Inso CLI tool and are run as part of a continuous integration pipeline using GitHub Actions.
 
+![Is Today My Birthday - Demo](./demo/IsTodayMyBirthdayDemo.gif)
+
 ## Running the App Locally
 
 1. `yarn install`
