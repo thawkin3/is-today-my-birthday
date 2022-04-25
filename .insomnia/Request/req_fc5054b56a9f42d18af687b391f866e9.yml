@@ -1,9 +1,9 @@
 _id: req_fc5054b56a9f42d18af687b391f866e9
 type: Request
 parentId: wrk_440fab3807f34a169c434aa2039f1f98
-modified: 1650771111693
+modified: 1650848978138
 created: 1650771012966
-url: http://localhost:3000/istodaymybirthday/04-21-1990
+url: http://localhost:3000/istodaymybirthday?birthday=04-20-1990&today=4-21-2022
 name: Today Is Not My Birthday
 description: ""
 method: GET

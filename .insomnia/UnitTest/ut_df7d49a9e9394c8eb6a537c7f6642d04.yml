@@ -1,7 +1,7 @@
 _id: ut_df7d49a9e9394c8eb6a537c7f6642d04
 type: UnitTest
 parentId: uts_21fc75fd23734071b3fa33e0021de354
-modified: 1650771455554
+modified: 1650849013478
 created: 1650771440608
 requestId: req_905b8e59582b4d5eb5e40099a3c8cdf5
 name: Returns a string when no date is provided
@@ -12,4 +12,4 @@ code: |-
   expect(body).to.be.an('object');
 
   const isTodayMyBirthday = body.data;
-  expect(isTodayMyBirthday).to.equal('No date provided');
+  expect(isTodayMyBirthday).to.equal('Please provide your birthdate');
