@@ -18,7 +18,8 @@ This is a simple REST API built with Node and Express that tells you whether or 
 
 - `/`
 - `/istodaymybirthday`
-- `/istodaymybirthday:date`
+- `/istodaymybirthday?birthday=<your birtday here>`
+- `/istodaymybirthday?birthday=<your birtday here>&today=<today's date here>`
 
 ## NPM Scripts
 
