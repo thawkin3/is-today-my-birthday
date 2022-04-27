@@ -15,7 +15,6 @@ router.get('/', function (req, res) {
   const birthdayMonthAndDay = format(birthDate, 'MM-DD');
 
   const isTodayMyBirthday = todaysMonthAndDay === birthdayMonthAndDay;
-  console.log(todaysMonthAndDay, birthdayMonthAndDay, isTodayMyBirthday);
 
   return res.json({ data: isTodayMyBirthday });
 });
